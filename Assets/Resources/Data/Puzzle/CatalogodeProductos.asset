@@ -1,0 +1,467 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cedda3a4ea24b1eb8687d0b93e0f7d, type: 3}
+  m_Name: CatalogodeProductos
+  m_EditorClassIdentifier: 
+  timeInSec: 0
+  col: 20
+  rows: 20
+  board:
+  - size: 20
+    row:
+    - R
+    - L
+    - F
+    - F
+    - L
+    - K
+    - G
+    - A
+    - W
+    - E
+    - U
+    - P
+    - R
+    - Q
+    - H
+    - V
+    - K
+    - C
+    - U
+    - H
+  - size: 20
+    row:
+    - E
+    - G
+    - R
+    - E
+    - C
+    - U
+    - B
+    - I
+    - E
+    - R
+    - T
+    - O
+    - S
+    - Y
+    - V
+    - I
+    - Z
+    - A
+    - M
+    - X
+  - size: 20
+    row:
+    - P
+    - Z
+    - D
+    - E
+    - O
+    - Q
+    - N
+    - C
+    - H
+    - B
+    - L
+    - S
+    - D
+    - L
+    - C
+    - L
+    - H
+    - K
+    - Z
+    - A
+  - size: 20
+    row:
+    - H
+    - I
+    - S
+    - K
+    - N
+    - K
+    - J
+    - E
+    - T
+    - G
+    - X
+    - F
+    - L
+    - A
+    - A
+    - T
+    - H
+    - P
+    - H
+    - D
+  - size: 20
+    row:
+    - H
+    - K
+    - N
+    - W
+    - F
+    - K
+    - S
+    - C
+    - G
+    - A
+    - R
+    - D
+    - Y
+    - M
+    - E
+    - R
+    - Y
+    - Q
+    - M
+    - C
+  - size: 20
+    row:
+    - R
+    - C
+    - K
+    - H
+    - O
+    - T
+    - V
+    - H
+    - J
+    - J
+    - Q
+    - Y
+    - I
+    - I
+    - O
+    - R
+    - D
+    - U
+    - F
+    - A
+  - size: 20
+    row:
+    - X
+    - P
+    - W
+    - E
+    - R
+    - Z
+    - L
+    - E
+    - R
+    - S
+    - I
+    - N
+    - W
+    - N
+    - T
+    - K
+    - T
+    - A
+    - S
+    - G
+  - size: 20
+    row:
+    - N
+    - P
+    - I
+    - M
+    - M
+    - E
+    - J
+    - T
+    - N
+    - W
+    - A
+    - E
+    - E
+    - A
+    - C
+    - Y
+    - L
+    - I
+    - V
+    - L
+  - size: 20
+    row:
+    - A
+    - U
+    - I
+    - A
+    - A
+    - F
+    - Y
+    - K
+    - R
+    - D
+    - Z
+    - N
+    - R
+    - D
+    - I
+    - A
+    - S
+    - R
+    - J
+    - I
+  - size: 20
+    row:
+    - C
+    - F
+    - E
+    - T
+    - D
+    - X
+    - J
+    - U
+    - O
+    - V
+    - M
+    - Q
+    - Z
+    - O
+    - Y
+    - E
+    - T
+    - E
+    - W
+    - H
+  - size: 20
+    row:
+    - L
+    - H
+    - D
+    - V
+    - O
+    - E
+    - G
+    - E
+    - Q
+    - J
+    - L
+    - J
+    - D
+    - E
+    - K
+    - V
+    - X
+    - B
+    - J
+    - J
+  - size: 20
+    row:
+    - Y
+    - K
+    - Q
+    - V
+    - S
+    - U
+    - N
+    - P
+    - F
+    - R
+    - P
+    - V
+    - U
+    - N
+    - C
+    - F
+    - E
+    - U
+    - X
+    - D
+  - size: 20
+    row:
+    - T
+    - S
+    - N
+    - V
+    - Y
+    - F
+    - N
+    - V
+    - D
+    - K
+    - G
+    - R
+    - P
+    - C
+    - U
+    - V
+    - Y
+    - T
+    - Z
+    - A
+  - size: 20
+    row:
+    - K
+    - M
+    - S
+    - Z
+    - R
+    - X
+    - N
+    - H
+    - L
+    - Y
+    - O
+    - M
+    - K
+    - A
+    - X
+    - Z
+    - C
+    - P
+    - A
+    - F
+  - size: 20
+    row:
+    - J
+    - V
+    - M
+    - I
+    - M
+    - G
+    - Y
+    - F
+    - L
+    - R
+    - W
+    - O
+    - Q
+    - L
+    - K
+    - V
+    - Z
+    - Q
+    - D
+    - C
+  - size: 20
+    row:
+    - Z
+    - S
+    - O
+    - G
+    - R
+    - A
+    - L
+    - J
+    - R
+    - N
+    - A
+    - X
+    - A
+    - I
+    - G
+    - M
+    - Y
+    - R
+    - I
+    - T
+  - size: 20
+    row:
+    - P
+    - Q
+    - F
+    - X
+    - S
+    - N
+    - D
+    - Y
+    - S
+    - T
+    - R
+    - I
+    - Q
+    - E
+    - Q
+    - J
+    - L
+    - A
+    - W
+    - B
+  - size: 20
+    row:
+    - X
+    - Q
+    - L
+    - R
+    - G
+    - G
+    - L
+    - E
+    - N
+    - A
+    - P
+    - L
+    - M
+    - N
+    - X
+    - L
+    - F
+    - F
+    - Q
+    - M
+  - size: 20
+    row:
+    - H
+    - O
+    - J
+    - S
+    - L
+    - Y
+    - H
+    - J
+    - B
+    - X
+    - X
+    - S
+    - S
+    - T
+    - J
+    - K
+    - I
+    - E
+    - M
+    - B
+  - size: 20
+    row:
+    - R
+    - B
+    - X
+    - W
+    - K
+    - Q
+    - U
+    - X
+    - Q
+    - T
+    - Y
+    - G
+    - F
+    - E
+    - N
+    - H
+    - I
+    - L
+    - I
+    - N
+  SearchWords:
+  - Word: LAMINADOENCALIENTE
+  - Word: LAMINADOENFRIO
+  - Word: CONFORMADOS
+  - Word: RECUBIERTOS
+  - Word: PERFILES
+  - Word: LARGOS
+  - Word: TUBERIA
+  - Word: PANEL

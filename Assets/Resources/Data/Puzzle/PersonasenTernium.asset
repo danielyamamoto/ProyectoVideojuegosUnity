@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cedda3a4ea24b1eb8687d0b93e0f7d, type: 3}
+  m_Name: PersonasenTernium
+  m_EditorClassIdentifier: 
+  timeInSec: 0
+  col: 15
+  rows: 15
+  board:
+  - size: 15
+    row:
+    - O
+    - J
+    - T
+    - E
+    - J
+    - D
+    - W
+    - I
+    - O
+    - H
+    - O
+    - U
+    - M
+    - M
+    - B
+  - size: 15
+    row:
+    - G
+    - K
+    - X
+    - V
+    - S
+    - A
+    - R
+    - M
+    - A
+    - N
+    - D
+    - O
+    - T
+    - K
+    - H
+  - size: 15
+    row:
+    - X
+    - O
+    - X
+    - I
+    - B
+    - X
+    - G
+    - P
+    - Q
+    - Q
+    - Z
+    - F
+    - W
+    - T
+    - W
+  - size: 15
+    row:
+    - J
+    - J
+    - R
+    - V
+    - C
+    - C
+    - T
+    - F
+    - F
+    - G
+    - S
+    - Y
+    - A
+    - J
+    - I
+  - size: 15
+    row:
+    - W
+    - W
+    - N
+    - O
+    - R
+    - B
+    - Q
+    - N
+    - G
+    - K
+    - L
+    - E
+    - X
+    - X
+    - N
+  - size: 15
+    row:
+    - E
+    - T
+    - L
+    - N
+    - B
+    - Z
+    - L
+    - I
+    - U
+    - D
+    - A
+    - T
+    - D
+    - M
+    - U
+  - size: 15
+    row:
+    - Z
+    - H
+    - R
+    - E
+    - S
+    - T
+    - H
+    - E
+    - R
+    - Z
+    - G
+    - Z
+    - K
+    - S
+    - T
+  - size: 15
+    row:
+    - O
+    - J
+    - G
+    - E
+    - B
+    - U
+    - N
+    - A
+    - W
+    - K
+    - S
+    - A
+    - V
+    - E
+    - B
+  - size: 15
+    row:
+    - B
+    - F
+    - O
+    - D
+    - G
+    - F
+    - M
+    - Y
+    - M
+    - Y
+    - M
+    - I
+    - R
+    - N
+    - Q
+  - size: 15
+    row:
+    - O
+    - X
+    - I
+    - S
+    - G
+    - R
+    - A
+    - M
+    - D
+    - L
+    - E
+    - N
+    - F
+    - Y
+    - O
+  - size: 15
+    row:
+    - H
+    - G
+    - N
+    - O
+    - E
+    - D
+    - X
+    - A
+    - H
+    - G
+    - I
+    - D
+    - I
+    - G
+    - K
+  - size: 15
+    row:
+    - J
+    - F
+    - R
+    - J
+    - G
+    - I
+    - Y
+    - P
+    - T
+    - U
+    - H
+    - H
+    - Y
+    - B
+    - J
+  - size: 15
+    row:
+    - N
+    - Q
+    - W
+    - A
+    - L
+    - N
+    - I
+    - S
+    - M
+    - I
+    - T
+    - L
+    - I
+    - G
+    - C
+  - size: 15
+    row:
+    - Y
+    - N
+    - M
+    - N
+    - S
+    - O
+    - R
+    - D
+    - N
+    - A
+    - J
+    - E
+    - L
+    - A
+    - S
+  - size: 15
+    row:
+    - U
+    - V
+    - M
+    - R
+    - W
+    - E
+    - E
+    - Q
+    - M
+    - T
+    - O
+    - F
+    - X
+    - D
+    - E
+  SearchWords:
+  - Word: TERNIUM
+  - Word: IVONE
+  - Word: ESTHER
+  - Word: ALEJANDRO
+  - Word: ARMANDO
+  - Word: YETZA
+  - Word: MAGDA
+  - Word: JOSE

@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Opening.unity
+    guid: 96163092838a64acea0bd8382352c4a9
+  - enabled: 1
+    path: Assets/Scenes/Mapa.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/CasaTernySc.unity
+    guid: 09640340d1990410c8844a14fa50bc41
+  - enabled: 1
+    path: Assets/Scenes/TBWin.unity
+    guid: f6b18e30ff0824221aa6e30d205f5eef
+  - enabled: 1
+    path: Assets/Scenes/CasaTernySc.unity
+    guid: 09640340d1990410c8844a14fa50bc41
+  - enabled: 1
+    path: Assets/Scenes/TernyBuscaSc.unity
+    guid: 48085995e68504633a08bee73089fc8b
+  - enabled: 1
+    path: Assets/Scenes/SopadeLetrasSC/PreSopa.unity
+    guid: 58c16ac2dc25a40559b5883c73e761c2
+  - enabled: 1
+    path: Assets/Scenes/SopadeLetrasSC/SelectCategory.unity
+    guid: dc09ff44a921942d0b8b6dc34f12f0f1
+  - enabled: 1
+    path: Assets/Scenes/SopadeLetrasSC/SopaDeLetras.unity
+    guid: 0cbed8aa543dc4989b8885a53d84d1c6
+  - enabled: 1
+    path: Assets/Scenes/SopadeLetrasSC/SopaDeLetrasFin.unity
+    guid: b81399ffec42647f1866b49e23001963
+  - enabled: 1
+    path: Assets/Scenes/PreTernyPide.unity
+    guid: 084a36c19965b407b951f80950178e2b
+  - enabled: 1
+    path: Assets/Scenes/TernyPide.unity
+    guid: de4a69017efad4ca891eda51df66a864
+  - enabled: 1
+    path: Assets/Scenes/PreObra.unity
+    guid: 8b3ecffb0ac144965b56c0f600bb0db3
+  - enabled: 1
+    path: Assets/Scenes/TernyObra.unity
+    guid: fdeb2614d87e1453b98f714ad7e17e81
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/EstacionBloqueos.unity
+    guid: 77b28bfef93a14cc986f112d9ec06ba7
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/EstacionStock.unity
+    guid: ebdd395bc99f4497e9d510e1f5ba234e
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/EstacionCantidades.unity
+    guid: 186648c93ffe8425e9425505dfa90df0
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/EstacionLiberaciones.unity
+    guid: f2fc26ab4c5c141239ebed7afa0530f7
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/EstacionFact.unity
+    guid: 0fc614ea8bb3f45fb9f8ff62875ffeb6
+  - enabled: 1
+    path: Assets/Scenes/TernyObraEstaciones/Final !!!.unity
+    guid: 0a268948481074448812e6398b01921f
+  - enabled: 1
+    path: Assets/Scenes/PreAcomoda.unity
+    guid: 441b344c5887f4430b70aa8a6fb95fdb
+  - enabled: 1
+    path: Assets/Scenes/Acomodaa/Acomoda.unity
+    guid: 6fff82819ef4441eca884d114dd5c5e0
+  - enabled: 1
+    path: Assets/Scenes/Acomodaa/AcomodaGanar.unity
+    guid: b737502efe1c149f5830ba72a4cbcec2
+  - enabled: 1
+    path: Assets/Scenes/TernyPlazaSc.unity
+    guid: 41b35bc033df74325916388372ddc6f6
+  - enabled: 1
+    path: Assets/Scenes/TernyStationSc.unity
+    guid: 776117d3fc9114239ab25e6923e60e33
+  - enabled: 1
+    path: Assets/Scenes/PreMemo.unity
+    guid: 28940fcd3160c4a67b1dbcb744f081bb
+  - enabled: 1
+    path: Assets/Scenes/Memorama.unity
+    guid: 67e624304abf4438b95353b30173b9aa
+  - enabled: 1
+    path: Assets/Scenes/PreBusca.unity
+    guid: 02bb197387d374bb6b683b05bb4e1c36
+  - enabled: 1
+    path: Assets/Scenes/CasaDeCampoSc.unity
+    guid: c23a8bf5f9cd2477488c23f44f4ab082
+  - enabled: 1
+    path: Assets/Scenes/BiblioSc.unity
+    guid: 482677660559b490bb58f444bf57057e
+  - enabled: 1
+    path: Assets/Scenes/Insignias.unity
+    guid: 6f9ea960737064d53bf9ff3b2f93acd0
+  - enabled: 1
+    path: Assets/Scenes/CasaTernySc.unity
+    guid: 09640340d1990410c8844a14fa50bc41
+  m_configObjects: {}

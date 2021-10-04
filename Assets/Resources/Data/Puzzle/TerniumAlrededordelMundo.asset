@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cedda3a4ea24b1eb8687d0b93e0f7d, type: 3}
+  m_Name: TerniumAlrededordelMundo
+  m_EditorClassIdentifier: 
+  timeInSec: 0
+  col: 15
+  rows: 15
+  board:
+  - size: 15
+    row:
+    - R
+    - A
+    - J
+    - U
+    - P
+    - S
+    - F
+    - N
+    - X
+    - U
+    - R
+    - P
+    - V
+    - B
+    - V
+  - size: 15
+    row:
+    - I
+    - B
+    - R
+    - A
+    - Z
+    - I
+    - L
+    - I
+    - R
+    - C
+    - S
+    - U
+    - D
+    - A
+    - X
+  - size: 15
+    row:
+    - N
+    - C
+    - A
+    - H
+    - C
+    - U
+    - T
+    - J
+    - W
+    - Y
+    - Y
+    - O
+    - M
+    - D
+    - K
+  - size: 15
+    row:
+    - T
+    - Y
+    - X
+    - X
+    - G
+    - X
+    - F
+    - W
+    - D
+    - L
+    - T
+    - E
+    - R
+    - W
+    - N
+  - size: 15
+    row:
+    - O
+    - B
+    - L
+    - S
+    - L
+    - F
+    - D
+    - J
+    - J
+    - E
+    - R
+    - A
+    - P
+    - R
+    - D
+  - size: 15
+    row:
+    - A
+    - N
+    - I
+    - T
+    - O
+    - S
+    - B
+    - I
+    - J
+    - I
+    - N
+    - E
+    - R
+    - B
+    - P
+  - size: 15
+    row:
+    - Z
+    - H
+    - B
+    - X
+    - B
+    - G
+    - E
+    - Y
+    - C
+    - I
+    - D
+    - I
+    - H
+    - Y
+    - T
+  - size: 15
+    row:
+    - I
+    - I
+    - T
+    - M
+    - A
+    - I
+    - L
+    - A
+    - T
+    - F
+    - L
+    - T
+    - A
+    - U
+    - S
+  - size: 15
+    row:
+    - C
+    - R
+    - Z
+    - E
+    - L
+    - H
+    - C
+    - N
+    - M
+    - O
+    - N
+    - P
+    - V
+    - S
+    - G
+  - size: 15
+    row:
+    - U
+    - M
+    - A
+    - W
+    - D
+    - E
+    - E
+    - V
+    - F
+    - C
+    - N
+    - W
+    - B
+    - A
+    - C
+  - size: 15
+    row:
+    - G
+    - Q
+    - N
+    - A
+    - N
+    - G
+    - G
+    - G
+    - K
+    - I
+    - P
+    - R
+    - J
+    - V
+    - D
+  - size: 15
+    row:
+    - U
+    - P
+    - H
+    - T
+    - R
+    - D
+    - Z
+    - I
+    - I
+    - X
+    - S
+    - Q
+    - F
+    - Q
+    - U
+  - size: 15
+    row:
+    - J
+    - U
+    - R
+    - A
+    - W
+    - A
+    - P
+    - L
+    - R
+    - E
+    - U
+    - A
+    - D
+    - E
+    - L
+  - size: 15
+    row:
+    - Z
+    - A
+    - R
+    - G
+    - I
+    - C
+    - O
+    - L
+    - O
+    - M
+    - B
+    - I
+    - A
+    - N
+    - M
+  - size: 15
+    row:
+    - L
+    - S
+    - P
+    - L
+    - B
+    - Q
+    - G
+    - O
+    - E
+    - B
+    - F
+    - F
+    - D
+    - A
+    - P
+  SearchWords:
+  - Word: GLOBAL
+  - Word: ARGENTINA
+  - Word: AMERICANCENTRAL
+  - Word: BRAZIL
+  - Word: COLOMBIA
+  - Word: MEXICO
+  - Word: USA
