@@ -4,7 +4,6 @@ using System;
 using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
-using UnityEngine.UI;
 
 public class LoadManager : MonoBehaviour
 {

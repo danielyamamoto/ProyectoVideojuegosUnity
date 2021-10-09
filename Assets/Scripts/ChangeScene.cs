@@ -1,18 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
-{
-    public static void Change(string sc)
-    {
+public class ChangeScene : MonoBehaviour {
+    public static void Change(string sc) {
         SceneManager.LoadScene(sc);
     }
 
-    public void ButtonChange()
-    {
+    public void ButtonChange() {
         SceneManager.LoadScene("Mapa");
     }
-
 }

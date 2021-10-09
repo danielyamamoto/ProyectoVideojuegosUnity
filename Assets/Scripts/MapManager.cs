@@ -5,16 +5,13 @@ using UnityEngine.Networking;
 using Newtonsoft.Json;
 using UnityEngine.UI;
 
-public class MapManager : MonoBehaviour
-{
-    public GameObject jugador;
+public class MapManager : MonoBehaviour {
     Material[] mats;
+    public GameObject jugador;
     public Text txtName;
     public Text txtPoints;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         txtName.text = LoadManager.player.nickname;
         txtPoints.text = LoadManager.player.puntaje + " puntos";
         mats = jugador.transform.GetChild(0).GetComponent<Renderer>().materials;
@@ -33,9 +30,7 @@ public class MapManager : MonoBehaviour
                 }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         txtName.text = LoadManager.player.nickname;
         txtPoints.text = LoadManager.player.puntaje + " puntos";
     }

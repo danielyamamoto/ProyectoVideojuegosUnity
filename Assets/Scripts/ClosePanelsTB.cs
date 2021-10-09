@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ClosePanelsTB : MonoBehaviour
-{
+public class ClosePanelsTB : MonoBehaviour {
     public GameObject Panel;
-    
-    public void ClosePanel(){
+
+    private GameObject player;
+
+    private void Awake() {
+        player = GameObject.FindGameObjectWithTag("Player");
+	}
+
+    public void ClosePanel() {
         Panel.SetActive(false);
-        if(UIManagerTB.recolectados == 10){
-            ChangeScene.Change("TBWin");
-        }
+        player.GetComponent<MovementInput>().canMove = true;
+        if (UIManagerTB.recolectados == 10) { ChangeScene.Change("TBWin"); }
     }
 }

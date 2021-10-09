@@ -1,24 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class GameDataSelector : MonoBehaviour
-{
+public class GameDataSelector : MonoBehaviour {
     public GameData currentGameData;
     public GameLevelData levelData;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
+    void Awake() {
         SelectSequentialBoardData();
     }
 
-    private void SelectSequentialBoardData()
-    {
-        foreach (var data in levelData.data)
-        {
-            if (data.categoryName == currentGameData.selectedCategoryName)
-            {
+    private void SelectSequentialBoardData() {
+        foreach (var data in levelData.data) {
+            if (data.categoryName == currentGameData.selectedCategoryName) {
                 //Debug.Log($"DentroIf: {currentGameData.selectedCategoryName}");
                 var boardIndex = 0; //TODO
                 Debug.Log(data.boardData.Count);
