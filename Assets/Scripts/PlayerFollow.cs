@@ -1,32 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerFollow : MonoBehaviour
-{
-
+public class PlayerFollow : MonoBehaviour {
     public Transform PlayerTransform;
-
-    private Vector3 cameraOffset;
     public bool lookAtPlayer = false;
+    
+    private Vector3 cameraOffset;
 
-    [Range(0.1f, 1.0f)]
-    public float smoothFactor = 0.5f;
-    // Start is called before the first frame update
-    void Start()
-    {   
+    [Range(0.1f, 1.0f)] public float smoothFactor = 0.5f;
+    
+    void Start() {   
         cameraOffset = transform.position - PlayerTransform.position;
     }
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
+    void LateUpdate() {
         Vector3 newPos = PlayerTransform.position + cameraOffset;
-
         transform.position = Vector3.Slerp(transform.position, newPos, smoothFactor);
-
-        if (lookAtPlayer) {
-            transform.LookAt(PlayerTransform);
-        }
+        if (lookAtPlayer) { transform.LookAt(PlayerTransform); }
     }
 }

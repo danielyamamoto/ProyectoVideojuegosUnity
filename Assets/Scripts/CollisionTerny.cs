@@ -5,8 +5,8 @@ public class CollisionTerny : MonoBehaviour
 {
     // Este código va a ser draggeado a terny
 
-    void OnCollisionEnter(Collision collision) {
-       if (collision.gameObject.tag == "TernyALaObra") {
+    void OnCollisionEnter(Collision collision) { 
+        if (collision.gameObject.tag == "TernyALaObra") {
             SceneManager.LoadScene("PreObra");
         }
 
