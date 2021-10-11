@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CollisionTerny : MonoBehaviour
-{
-    // Este código va a ser draggeado a terny
-
+public class CollisionTerny : MonoBehaviour {
     void OnCollisionEnter(Collision collision) { 
         if (collision.gameObject.tag == "TernyALaObra") {
             SceneManager.LoadScene("PreObra");
