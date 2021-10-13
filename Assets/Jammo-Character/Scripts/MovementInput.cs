@@ -10,7 +10,7 @@ public class MovementInput : MonoBehaviour {
     [Range(0, 1f)] public float StartAnimTime = 0.3f;
     [Range(0, 1f)] public float StopAnimTime = 0.15f;
 
-	public bool canMove = true;
+	public static bool canMove = true;
 
 	[SerializeField] private float Velocity;
 	[SerializeField] private float desiredRotationSpeed = 0.01f;
@@ -58,11 +58,6 @@ public class MovementInput : MonoBehaviour {
 
 		controller.Move(new Vector3(0, verticalVel * 0.2f * Time.deltaTime, 0));
 	}
-
-	//public void RotateToCamera(Transform t) {
-        //desiredMoveDirection = cam.transform.forward;
-        //t.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(desiredMoveDirection), desiredRotationSpeed);
-    //}
 
 	void InputMagnitude() {
 		//Calculate Input Vectors

@@ -3,12 +3,6 @@ using UnityEngine;
 public class UpdateObjRecolectados : MonoBehaviour {
     public GameObject PSociedad, PFecha, PClock, PSemaforo, PSOE, PSaldo, PCaja, PPlantaTernium, PLiberar, PLentes;
 
-    private GameObject player;
-
-    private void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player");
-	}
-
     void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.tag == "dSociedad" || collision.gameObject.tag == "dFecha" || collision.gameObject.tag == "clock" || 
             collision.gameObject.tag == "Semaforo" || collision.gameObject.tag == "dSOE" || collision.gameObject.tag == "Saldo" || 
@@ -16,7 +10,8 @@ public class UpdateObjRecolectados : MonoBehaviour {
             collision.gameObject.tag == "dLentes") {
             
             UIManagerTB.recolectados += 1;
-            player.GetComponent<MovementInput>().canMove = false;
+            CountDown.isStoped = true;
+            MovementInput.canMove = false;
             collision.collider.gameObject.SetActive(false);
 
             if (collision.gameObject.tag == "dSociedad") { PSociedad.SetActive(true); }
