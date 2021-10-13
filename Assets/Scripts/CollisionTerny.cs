@@ -2,49 +2,17 @@
 using UnityEngine.SceneManagement;
 
 public class CollisionTerny : MonoBehaviour {
-    void OnCollisionEnter(Collision collision) { 
-        if (collision.gameObject.tag == "TernyALaObra") {
-            SceneManager.LoadScene("PreObra");
-        }
+    void OnCollisionEnter(Collision collision) {
 
-        if (collision.gameObject.tag == "TernyCasa") {
-            SceneManager.LoadScene("CasaTernySc");
-        }
-        
-        if (collision.gameObject.tag == "CasaCampo") {
-            SceneManager.LoadScene("CasaDeCampoSc");
-        }
-        
-        if (collision.gameObject.tag == "TernyPlaza") {
-            SceneManager.LoadScene("TernyPlazaSc");
-        }
-
-        if (collision.gameObject.tag == "TernyStation") {
-            SceneManager.LoadScene("TernyStationSc");
-        }
-        
-        if (collision.gameObject.tag == "Biblio") {
-            SceneManager.LoadScene("BiblioSc");
-        }
-
-        /*if (collision.gameObject.tag == "Memorama") {
-            SceneManager.LoadScene("PreMemo");
-        }*/
-
-        if (collision.gameObject.tag == "TernyPide") {
-            SceneManager.LoadScene("PreTernyPide");
-        }
-
-        if (collision.gameObject.tag == "SopaLetras") {
-            SceneManager.LoadScene("PreSopa");
-        }
-
-        if (collision.gameObject.tag == "Acomoda") {
-            SceneManager.LoadScene("PreAcomoda");
-        }
-
-        if (collision.gameObject.tag == "TernyBusca") {
-            SceneManager.LoadScene("PreBusca");
-        }
+		switch (collision.gameObject.tag) {
+            case "TernyALaObra": SceneManager.LoadScene("PreObra"); break;
+            case "TernyBusca": SceneManager.LoadScene("PreBusca"); break;
+            case "TernyCasa": SceneManager.LoadScene("CasaTernySc"); break;
+            case "CasaCampo": SceneManager.LoadScene("CasaDeCampoSc"); break;
+            case "TernyPlaza": SceneManager.LoadScene("TernyPlazaSc"); break;
+            case "TernyStation": SceneManager.LoadScene("TernyStationSc"); break;
+            case "Biblio": SceneManager.LoadScene("BiblioSc"); break;
+            default: break;
+		}
     }
 }

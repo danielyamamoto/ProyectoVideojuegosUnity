@@ -5,9 +5,10 @@ public class CountDown : MonoBehaviour {
     public Text timeText;
     public static bool isStoped = false;
 
+    [SerializeField] private string nameScene = "TBLose";
     [SerializeField] [Range(0, 10)] public int timeMinutes = 5;
     [SerializeField] [Range(0, 60)] public float timeSeconds = 0f;
-        
+
     private float timeRemaining = 10.0f;
 
 	private void Awake() {
@@ -20,7 +21,7 @@ public class CountDown : MonoBehaviour {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
 			} else {
-                ChangeScene.Change("TBLose");
+                ChangeScene.Change(nameScene);
 			}
 		}
     }

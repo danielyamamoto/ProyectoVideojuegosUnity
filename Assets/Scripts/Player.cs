@@ -1,9 +1,7 @@
 using System;
 
 [System.Serializable]
-
-public class Player 
-{
+public class Player  {
     public string id;
     public string juegoAsignado;
     public string tiempoDeJuego;
@@ -11,6 +9,4 @@ public class Player
     public int diasConsec;
     public string nickname;
     public string color;
-    
-
 }

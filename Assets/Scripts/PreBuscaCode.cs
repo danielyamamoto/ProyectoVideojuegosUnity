@@ -1,17 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PreBuscaCode : MonoBehaviour
-{
-    public void GoTo()
-    {
+public class PreBuscaCode : MonoBehaviour {
+    public void GoTo() {
        ChangeScene.Change("TernyBuscaSc"); 
     }
 
-    public void ReturnTo()
-    {
+    public void ReturnTo() {
         ChangeScene.Change("Mapa");
     } 
-
 }

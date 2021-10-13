@@ -1,17 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PreObraCode : MonoBehaviour
-{
-    public void GoTo()
-    {
+public class PreObraCode : MonoBehaviour {
+    public void GoTo() {
        ChangeScene.Change("TernyObra"); 
     }
 
-    public void ReturnTo()
-    {
+    public void ReturnTo() {
         ChangeScene.Change("Mapa");
     } 
-
 }

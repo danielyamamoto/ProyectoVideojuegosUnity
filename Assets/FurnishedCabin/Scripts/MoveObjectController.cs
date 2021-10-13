@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class MoveObjectController : MonoBehaviour 
-{
+public class MoveObjectController : MonoBehaviour  {
 	public float reachRange = 1.8f;			
 
 	private Animator anim;
@@ -19,16 +17,13 @@ public class MoveObjectController : MonoBehaviour
 	private int rayLayerMask; 
 
 
-	void Start()
-	{
+	private void Awake() {
 		//Initialize moveDrawController if script is enabled.
 		player = GameObject.FindGameObjectWithTag("Player");
 
+		//a reference to Camera is required for rayasts
 		fpsCam = Camera.main;
-		if (fpsCam == null)	//a reference to Camera is required for rayasts
-		{
-			Debug.LogError("A camera tagged 'MainCamera' is missing.");
-		}
+		if (fpsCam == null)	{ Debug.LogError("A camera tagged 'MainCamera' is missing."); }
 
 		//create AnimatorOverrideController to re-use animationController for sliding draws.
 		anim = GetComponent<Animator>(); 
@@ -40,22 +35,16 @@ public class MoveObjectController : MonoBehaviour
 
 		//setup GUI style settings for user prompts
 		setupGui();
-
 	}
 		
-	void OnTriggerEnter(Collider other)
-	{		
-		if (other.gameObject == player)		//player has collided with trigger
-		{			
-			playerEntered = true;
-
-		}
+	void OnTriggerEnter(Collider other) {		
+		//player has collided with trigger
+		if (other.gameObject == player) { playerEntered = true;	}
 	}
 
-	void OnTriggerExit(Collider other)
-	{		
-		if (other.gameObject == player)		//player has exited trigger
-		{			
+	void OnTriggerExit(Collider other) {		
+		//player has exited trigger
+		if (other.gameObject == player) {			
 			playerEntered = false;
 			//hide interact message as player may not have been looking at object when they left
 			showInteractMsg = false;		
@@ -64,87 +53,73 @@ public class MoveObjectController : MonoBehaviour
 
 
 
-	void Update()
-	{		
-		if (playerEntered)
-		{	
-
+	private void Update() {		
+		if (playerEntered) {
 			//center point of viewport in World space.
 			Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f,0.5f,0f));
 			RaycastHit hit;
 
 			//if raycast hits a collider on the rayLayerMask
-			if (Physics.Raycast(rayOrigin,fpsCam.transform.forward, out hit,reachRange,rayLayerMask))
-			{
-				MoveableObject moveableObject = null;
+			if (Physics.Raycast(rayOrigin,fpsCam.transform.forward, out hit,reachRange,rayLayerMask)) {
 				//is the object of the collider player is looking at the same as me?
-				if (!isEqualToParent(hit.collider, out moveableObject))
-				{	//it's not so return;
+				MoveableObject moveableObject = null;
+				
+				//it's not so return;
+				if (!isEqualToParent(hit.collider, out moveableObject)) {	
 					return;
 				}
 					
-				if (moveableObject != null)		//hit object must have MoveableDraw script attached
-				{
+				//hit object must have MoveableDraw script attached
+				if (moveableObject != null) {
 					showInteractMsg = true;
 					string animBoolNameNum = animBoolName + moveableObject.objectNumber.ToString();
 
 					bool isOpen = anim.GetBool(animBoolNameNum);	//need current state for message.
 					msg = getGuiMsg(isOpen);
 
-					if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonDown("Fire1"))
-					{
+					if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonDown("Fire1")) {
 						anim.enabled = true;
 						anim.SetBool(animBoolNameNum,!isOpen);
 						msg = getGuiMsg(!isOpen);
 					}
 
 				}
-			}
-			else
-			{
+			} else {
 				showInteractMsg = false;
 			}
 		}
-
 	}
 
 	//is current gameObject equal to the gameObject of other.  check its parents
-	private bool isEqualToParent(Collider other, out MoveableObject draw)
-	{
+	private bool isEqualToParent(Collider other, out MoveableObject draw) {
 		draw = null;
 		bool rtnVal = false;
-		try
-		{
+		
+		try {
 			int maxWalk = 6;
 			draw = other.GetComponent<MoveableObject>();
 
 			GameObject currentGO = other.gameObject;
-			for(int i=0;i<maxWalk;i++)
-			{
-				if (currentGO.Equals(this.gameObject))
-				{
+			for(int i=0;i<maxWalk;i++) {
+				if (currentGO.Equals(this.gameObject)) {
 					rtnVal = true;	
 					if (draw== null) draw = currentGO.GetComponentInParent<MoveableObject>();
 					break;			//exit loop early.
 				}
 
 				//not equal to if reached this far in loop. move to parent if exists.
-				if (currentGO.transform.parent != null)		//is there a parent
-				{
+				//is there a parent
+				if (currentGO.transform.parent != null) {
 					currentGO = currentGO.transform.parent.gameObject;
 				}
 			}
-		} 
-		catch (System.Exception e)
-		{
+		} catch (System.Exception e) {
 			Debug.Log(e.Message);
 		}
 			
 		return rtnVal;
-
 	}
 		
-
 	#region GUI Config
 
 	//configure the style of the GUI

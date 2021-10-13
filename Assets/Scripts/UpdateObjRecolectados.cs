@@ -13,26 +13,19 @@ public class UpdateObjRecolectados : MonoBehaviour {
             CountDown.isStoped = true;
             MovementInput.canMove = false;
             collision.collider.gameObject.SetActive(false);
-
-            if (collision.gameObject.tag == "dSociedad") { PSociedad.SetActive(true); }
-
-            if (collision.gameObject.tag == "dFecha") { PFecha.SetActive(true); }
             
-            if (collision.gameObject.tag == "clock") { PClock.SetActive(true); }
-            
-            if (collision.gameObject.tag == "Semaforo") { PSemaforo.SetActive(true); }
-            
-            if (collision.gameObject.tag == "dSOE") { PSOE.SetActive(true); }
-            
-            if (collision.gameObject.tag == "Saldo") { PSaldo.SetActive(true); }
-            
-            if (collision.gameObject.tag == "Caja") { PCaja.SetActive(true); }
-            
-            if (collision.gameObject.tag == "PlantaTernium") { PPlantaTernium.SetActive(true); }
-            
-            if (collision.gameObject.tag == "dLiberar") { PLiberar.SetActive(true); }
-            
-            if (collision.gameObject.tag == "dLentes") { PLentes.SetActive(true); }
+            switch (collision.gameObject.tag) {
+                case "dSociedad": PSociedad.SetActive(true); break;
+                case "dFecha": PFecha.SetActive(true); break;
+                case "clock": PClock.SetActive(true); break;
+                case "Semaforo": PSemaforo.SetActive(true); break;
+                case "dSOE": PSOE.SetActive(true); break;
+                case "Saldo": PSaldo.SetActive(true); break;
+                case "Caja": PCaja.SetActive(true); break;
+                case "PlantaTernium": PPlantaTernium.SetActive(true); break;
+                case "dLiberar": PLiberar.SetActive(true); break;
+                case "dLentes": PLentes.SetActive(true); break;
+            }
         }
     }
 }

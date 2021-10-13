@@ -296,8 +296,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4920926, y: 1.1100868, z: 0.9996393}
-  m_Center: {x: -0.122681856, y: 0.023252254, z: 0.00018041735}
+  m_Size: {x: 1.7, y: 1.2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &29760452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2016,8 +2016,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5510174, y: 1.1100868, z: 1}
-  m_Center: {x: -0.15214415, y: 0.023252279, z: 0}
+  m_Size: {x: 1.7, y: 1.2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &249667229
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12183,7 +12183,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1494889807
 Canvas:
   m_ObjectHideFlags: 0
@@ -13765,7 +13765,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1805610173
 Canvas:
   m_ObjectHideFlags: 0
@@ -17093,7 +17093,6 @@ MonoBehaviour:
   VerticalAnimTime: 0.2
   StartAnimTime: 0.3
   StopAnimTime: 0.15
-  canMove: 1
   Velocity: 5.5
   desiredRotationSpeed: 0.01
   allowPlayerRotation: 0.1
