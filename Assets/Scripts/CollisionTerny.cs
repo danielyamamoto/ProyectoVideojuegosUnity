@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class CollisionTerny : MonoBehaviour {
     void OnCollisionEnter(Collision collision) {
-
 		switch (collision.gameObject.tag) {
             case "TernyALaObra": SceneManager.LoadScene("PreObra"); break;
             case "TernyBusca": SceneManager.LoadScene("PreBusca"); break;
