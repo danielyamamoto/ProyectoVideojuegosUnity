@@ -296,7 +296,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 1.2, z: 1}
+  m_Size: {x: 2, y: 1.25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &29760452
 MeshRenderer:
@@ -2016,7 +2016,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7, y: 1.2, z: 1}
+  m_Size: {x: 2, y: 1.25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &249667229
 MeshRenderer:
@@ -3523,7 +3523,7 @@ GameObject:
   - component: {fileID: 444348942}
   m_Layer: 0
   m_Name: TernyBusca
-  m_TagString: Untagged
+  m_TagString: TernyBusca
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3648,8 +3648,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2532363, y: 1.1100868, z: 1.1515117}
-  m_Center: {x: -0.0032533181, y: 0.023252279, z: -0.07575603}
+  m_Size: {x: 2, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &450053015
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7634,8 +7634,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8039498, y: 1.1284183, z: 1}
-  m_Center: {x: -0.042594742, y: 0.005713271, z: -2.7075396e-11}
+  m_Size: {x: 2, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &904247287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9367,8 +9367,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5803032, y: 1.1608834, z: 0.957011}
-  m_Center: {x: -0.08769738, y: -0.024053393, z: -0.021494495}
+  m_Size: {x: 2, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1109086534
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10110,8 +10110,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5353655, y: 1.2640401, z: 0.9999999}
-  m_Center: {x: 0.025074383, y: 0.074520014, z: 0}
+  m_Size: {x: 2, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1198204448
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14335,8 +14335,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.491837, y: 1.1601202, z: 0.9999982}
-  m_Center: {x: -0.12255329, y: -0.0017644521, z: 0.00000091235177}
+  m_Size: {x: 2, y: 1.25, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1893094804
 MeshRenderer:
   m_ObjectHideFlags: 0

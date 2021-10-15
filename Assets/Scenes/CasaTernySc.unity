@@ -1856,6 +1856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: yellow
 --- !u!114 &726162973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,14 +1903,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorYellow
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: yellow
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &726162974
@@ -2311,6 +2312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: green
 --- !u!114 &887049628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2355,16 +2357,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 887049627}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorGreen
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: green
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &887517626
@@ -2565,6 +2567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: red
 --- !u!114 &923069962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: orange
 --- !u!114 &999364438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3091,16 +3095,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 999364437}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorOrange
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: orange
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1055417431
@@ -3967,6 +3971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: red
 --- !u!114 &1538953359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4011,16 +4016,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1538953358}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorRed
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: red
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1543009622
@@ -4348,6 +4353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: blue
 --- !u!114 &1730226401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4392,16 +4398,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1730226400}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorBlue
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: blue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1774330691
@@ -4828,6 +4834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: pink
 --- !u!114 &1909583478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4872,16 +4879,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1909583477}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorPink
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: pink
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1909583479
@@ -5012,6 +5019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: purple
 --- !u!114 &1939967604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5056,16 +5064,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1939967603}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorPurple
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: purple
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1955839626
@@ -5120,6 +5128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: gray
 --- !u!114 &1955839629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5164,16 +5173,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1955839628}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorGray
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: gray
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1955839630
@@ -5344,6 +5353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: teal
 --- !u!114 &2023854478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5388,16 +5398,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2023854477}
+      - m_Target: {fileID: 726162972}
         m_TargetAssemblyTypeName: ChColor, Assembly-CSharp
-        m_MethodName: ChangeColorTeal
-        m_Mode: 1
+        m_MethodName: ChangeColor
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: teal
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2023854479
@@ -5496,6 +5506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 299607906}
+  color: red
 --- !u!114 &2102746493
 MonoBehaviour:
   m_ObjectHideFlags: 0
