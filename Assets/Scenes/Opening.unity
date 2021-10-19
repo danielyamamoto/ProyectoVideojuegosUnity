@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176f5dc5824134b259d2331b11253da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  url: http://localhost:8080/juego?playerID=2
 --- !u!136 &1884598588
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3931,7 +3932,6 @@ MonoBehaviour:
   VerticalAnimTime: 0.2
   StartAnimTime: 0.3
   StopAnimTime: 0.15
-  canMove: 1
   Velocity: 10
   desiredRotationSpeed: 0.3
   allowPlayerRotation: 0.1
